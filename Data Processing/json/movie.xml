@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE movie SYSTEM "movie.dtd" >
+<movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie.xsd" >
+<movie>  
+    <movie>        
+        <movie_title>Avatar</movie_title>
+        <genres>Action</genres>
+        <character_name>Jake Sully</character_name>
+        <actore_name>Sam Worthington</actore_name>
+        <amount>237000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>11800</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Pirates of the Caribbean: At World's End</movie_title>
+        <genres>Adventure</genres>
+        <character_name>Captain Jack Sparrow</character_name>
+        <actore_name>Johnny Depp</actore_name>
+        <amount>300000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>4500</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>The Dark Knight Rises</movie_title>
+        <genres>Action</genres>
+        <character_name>Bruce Wayne / Batman</character_name>
+        <actore_name>Christian Bale</actore_name>
+        <amount>250000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>8</vote_avarage>
+        <vote_counte>9106</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Spider-Man 3</movie_title>
+        <genres>Action</genres>
+        <character_name>Peter Parker / Spider-Man</character_name>
+        <actore_name>Tobey Maguire</actore_name>
+        <amount>258000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>6</vote_avarage>
+        <vote_counte>3576</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Avengers: Age of Ultron</movie_title>
+        <genres>Adventure</genres>
+        <character_name>Tony Stark / Iron Man</character_name>
+        <actore_name>Robert Downey Jr</actore_name>
+        <amount>280000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>6767</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Harry Potter and the Half-Blood Prince</movie_title>
+        <genres>Fantasy</genres>
+        <character_name>Harry Potter</character_name>
+        <actore_name>Daniel Radcliffe</actore_name>
+        <amount>250000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>5293</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Batman v Superman: Dawn of Justice</movie_title>
+        <genres>Fantasy</genres>
+        <character_name>Bruce Wayne / Batman</character_name>
+        <actore_name>Ben Affleck</actore_name>
+        <amount>250000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>6</vote_avarage>
+        <vote_counte>7004</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Superman Returns</movie_title>
+        <genres>Action</genres>
+        <character_name>Superman / Clark Kent</character_name>
+        <actore_name>Brandon Routh</actore_name>
+        <amount>270000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>5</vote_avarage>
+        <vote_counte>1400</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Pirates of the Caribbean: Dead Man's Chest</movie_title>
+        <genres>Adventure</genres>
+        <character_name>Captain Jack Sparrow</character_name>
+        <actore_name>Johnny Depp</actore_name>
+        <amount>200000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>5246</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Man of Steel</movie_title>
+        <genres>Action</genres>
+        <character_name>Clark Kent / Kal-El</character_name>
+        <actore_name>Henry Cavill</actore_name>
+        <amount>225000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>6359</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>Men in Black 3</movie_title>
+        <genres>Comedy</genres>
+        <character_name>Agent J</character_name>
+        <actore_name>Will Smith</actore_name>
+        <amount>225000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>6</vote_avarage>
+        <vote_counte>4160</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>The Hobbit: The Battle of the Five Armies</movie_title>
+        <genres>Action</genres>
+        <character_name>Bilbo Baggins</character_name>
+        <actore_name>Martin Freeman</actore_name>
+        <amount>250000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>4760</vote_counte>
+    </movie>
+    <movie>        
+        <movie_title>The Amazing Spider-Man</movie_title>
+        <genres>Action</genres>
+        <character_name>Peter Parker / Spider-Man</character_name>
+        <actore_name>Andrew Garfield</actore_name>
+        <amount>215000000</amount>
+        <original_Lang>en</original_Lang>
+        <vote_avarage>7</vote_avarage>
+        <vote_counte>6586</vote_counte>
+    </movie>
+</movie>
