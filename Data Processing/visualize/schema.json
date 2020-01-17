@@ -1,0 +1,101 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+        "movie_title",
+        "genres",
+        "character_name",
+        "actore_name",
+        "amount",
+        "original_Lang",
+        "vote_avarage",
+        "vote_counte"
+      ],
+      "properties": {
+        "movie_title": {
+          "$id": "#/items/properties/movie_title",
+          "type": "string",
+          "title": "The Movie_title Schema",
+          "default": "",
+          "examples": [
+            "Avatar"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "genres": {
+          "$id": "#/items/properties/genres",
+          "type": "string",
+          "title": "The Genres Schema",
+          "default": "",
+          "examples": [
+            "Action"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "character_name": {
+          "$id": "#/items/properties/character_name",
+          "type": "string",
+          "title": "The Character_name Schema",
+          "default": "",
+          "examples": [
+            "Jake Sully"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "actore_name": {
+          "$id": "#/items/properties/actore_name",
+          "type": "string",
+          "title": "The Actore_name Schema",
+          "default": "",
+          "examples": [
+            "Sam Worthington"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "amount": {
+          "$id": "#/items/properties/amount",
+          "type": "integer",
+          "title": "The Amount Schema",
+          "default": 0,
+          "examples": [
+            237000000
+          ]
+        },
+        "original_Lang": {
+          "$id": "#/items/properties/original_Lang",
+          "type": "string",
+          "title": "The Original_lang Schema",
+          "default": "",
+          "examples": [
+            "en"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "vote_avarage": {
+          "$id": "#/items/properties/vote_avarage",
+          "type": "integer",
+          "title": "The Vote_avarage Schema",
+          "default": 0,
+          "examples": [
+            7
+          ]
+        },
+        "vote_counte": {
+          "$id": "#/items/properties/vote_counte",
+          "type": "integer",
+          "title": "The Vote_counte Schema",
+          "default": 0,
+          "examples": [
+            11800
+          ]
+        }
+      }
+    }
+  }

@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 var convert = require('xml-js');
+const fs = require('fs');
 var js2xmlparser = require("js2xmlparser");
+const xml2js = require('xml2js').parseString;
 var Ajv = require('ajv');
 var ajv = new Ajv();
 var schema = {
@@ -237,9 +239,10 @@ router.get('/xml2', (req, res) => {
         }
         else if (results.length > 0) {
            
-            var options = { compact: true, ignoreComment: true, spaces: 4 };
+            
             var result1 = js2xmlparser.parse("movie", results);
-            res.status(200).json(result1);
+            return res.send(result1);
+           // res.status(200).json(result1);
            
 
         } else {
@@ -249,4 +252,19 @@ router.get('/xml2', (req, res) => {
         }
     });
 });
+
+router.patch('/xmlPatch', (req) => {
+    const origin  =fs.readFileSync("movie.xml", "utf8");
+    xml2js(origin, (error, editableJSON) => {
+        if(error){
+            console.log(error);
+        }else{
+            editableJSON.stackOverflow = true;
+            // Making it back to XML
+            const resultXML = js2xmlparser.parse('root', editableJSON);
+            console.log(resultXML)
+        }
+    });
+});
+
 module.exports = router;

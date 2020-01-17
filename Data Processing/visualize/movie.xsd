@@ -1,0 +1,22 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="movie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="movie" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="movie_title"/>
+              <xs:element type="xs:string" name="genres"/>
+              <xs:element type="xs:string" name="character_name"/>
+              <xs:element type="xs:string" name="actore_name"/>
+              <xs:element type="xs:int" name="amount"/>
+              <xs:element type="xs:string" name="original_Lang"/>
+              <xs:element type="xs:byte" name="vote_avarage"/>
+              <xs:element type="xs:short" name="vote_counte"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
