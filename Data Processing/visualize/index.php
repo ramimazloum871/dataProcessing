@@ -24,7 +24,7 @@ require_once 'vendor/autoload.php';
 use JsonSchema\Constraints\Constraint;
 use JsonSchema\Validator;
 //we get the json value and put it in config variable
-$config = json_decode(file_get_contents('http://127.0.0.1:3000/movie/budget'));
+$config = json_decode(file_get_contents('http://127.0.0.1:3000/movie/json'));
 $validator = new Validator; //to use the library to validate the json value
 $validator->validate(
     $config,
@@ -44,7 +44,7 @@ if ($validator->isValid()) { // if the json schema is correct will echo the valu
 //print_r($config);
 
 $xml = new DOMDocument();
-$xml->load("http://127.0.0.1:3000/movie/xml2"); // Or load if filename required
+$xml->load("http://127.0.0.1:3000/movie/xml"); // Or load if filename required
 if (!$xml->schemaValidate("movie.xsd")) // Or schemaValidateSource if string used.
 {
     echo "validation errors";
