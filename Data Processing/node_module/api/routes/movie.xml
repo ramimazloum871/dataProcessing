@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie.xsd" >
+<movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie.xsd" >
 <movies>  
     <movie>        
         <movie_title>Avatar</movie_title>

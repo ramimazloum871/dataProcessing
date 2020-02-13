@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
+var builder = require('xmlbuilder');
 //Get record from vote table depending on the voteID
 router.get('/:id', (req, res) => {
     var db = req.con;
-    let sql = "SELECT `vote_ID`, `vote_avarage`, `vote_counte` FROM `vote` WHERE WHERE `vote_ID`=" + req.params.id;
+    let sql = "SELECT `vote_ID`, `vote_avarage`, `vote_counte` FROM `vote` WHERE `vote_ID`=" + req.params.id;
     let query = db.query(sql, (err, results) => {
         if (err) {
             console.log(err);
@@ -21,10 +21,7 @@ router.get('/:id', (req, res) => {
 
 //insert record into vote table depending on the voteID
 router.post('/', (req,res) => {
-    const movie = {
-        vote_avarage: req.body.vote_avarage,
-        vote_counte: req.body.vote_counte,
-    }
+let movie;
     if (!movie) {
         return res.status(400).send({ error: true, message: 'please provide all required fields' });
     }
@@ -39,8 +36,9 @@ router.post('/', (req,res) => {
     });
 //Update record from vote table depending on the voteID
 router.patch('/:voteId', (req,res) => {
+    let movie ;
     const id = req.params.voteId;  
-    let movie = {
+    movie = {
         vote_avarage: req.body.vote_avarage,
         vote_counte: req.body.vote_counte,
     }

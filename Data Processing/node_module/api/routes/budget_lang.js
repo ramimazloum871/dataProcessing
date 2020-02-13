@@ -38,6 +38,7 @@ router.post('/', (req,res) => {
 //update record into the budget_lang table depending on the budgetID
 router.patch('/:budgetId', (req, res) => {
     const id = req.params.budgetId;
+   
     const movie = {
         amount: req.body.amount,
         original_Lang: req.body.original_Lang,
@@ -108,5 +109,10 @@ router.delete('/asXml/:budgetId', (req,res) => {
 });
 
 
-
+function HTML_ACCEPTED (req, res, next) { 
+    return req.accepts("html") ? next() : next("route")
+ }
+function JSON_ACCEPTED (req, res, next) { 
+    return req.accepts("json") ? next() : next("route") 
+}
 module.exports = router;
