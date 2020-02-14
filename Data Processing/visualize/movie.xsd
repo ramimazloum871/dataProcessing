@@ -2,17 +2,23 @@
   <xs:element name="movies">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="movies" maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="movies">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="movie_title"/>
-              <xs:element type="xs:string" name="genres"/>
-              <xs:element type="xs:string" name="character_name"/>
-              <xs:element type="xs:string" name="actore_name"/>
-              <xs:element type="xs:int" name="amount"/>
-              <xs:element type="xs:string" name="original_Lang"/>
-              <xs:element type="xs:byte" name="vote_avarage"/>
-              <xs:element type="xs:short" name="vote_counte"/>
+              <xs:element name="movie" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="movie_title"/>
+                    <xs:element type="xs:string" name="genres"/>
+                    <xs:element type="xs:string" name="character_name"/>
+                    <xs:element type="xs:string" name="actore_name"/>
+                    <xs:element type="xs:int" name="amount"/>
+                    <xs:element type="xs:string" name="original_Lang"/>
+                    <xs:element type="xs:byte" name="vote_avarage"/>
+                    <xs:element type="xs:short" name="vote_counte"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
